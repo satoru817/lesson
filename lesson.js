@@ -13,8 +13,8 @@ class fruit{
   constructor(name,price){
     this.name = name;
     this.price = price;
-  }
-}
+  };
+};
 
 const apple = new fruit("りんご",100);
 const banana = new fruit("バナナ",500);
@@ -31,8 +31,8 @@ for(let i=0; i<fruits.length;i++){
   console.log(name + `は`+price_include_tax + '円です。' );
   if(price_include_tax>1000){
     console.log(`${name}は高いので買うのをやめます。`);
-  }
-}
+  };
+};
 
 // // 練習問題
 // // ## 練習 2
@@ -57,8 +57,8 @@ for(let i=0; i<vegetables.length;i++){
   console.log(name + `は`+price_include_tax + '円です。' );
   if(price_include_tax>1000){
     console.log(`${name}は高いので買うのをやめます。`);
-  }
-}
+  };
+};
 
 function SayTaxedPrices(arr){
   if (Array.isArray(arr) !== true){
@@ -71,11 +71,11 @@ function SayTaxedPrices(arr){
       console.log(name + `は`+price_include_tax + '円です。' );
       if(price_include_tax>1000){
         console.log(`${name}は高いので買うのをやめます。`);
-      }
-    }
-  }
+      };
+    };
+  };
 
-// }
+};
 
 SayTaxedPrices(vegetables);
 SayTaxedPrices(fruits);
@@ -93,7 +93,7 @@ SayTaxedPrices(fruits);
 
 function GetTaxedPrice(price){
   return price*1.08;
-}
+};
 
 function JudgePrice(price){
   if(price>1000){
@@ -101,7 +101,7 @@ function JudgePrice(price){
   }else{
     return false;
   }
-}
+};
 
 const btn = document.getElementById(`buyButton`);
 const judgement = document.getElementById("judgement");
@@ -116,4 +116,4 @@ btn.addEventListener(`click`,()=>{
     if(JudgePrice(taxed_price)){
       judgement.innerHTML +=`<br>${productName}は高いので買うのをやめます。`;
     }
-})
+});
