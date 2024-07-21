@@ -8,11 +8,11 @@ $(function () {
   $('#add1').on('click', function (e) {
     e.preventDefault();//これがないとすぐ消えてしまう。
     //入力なしの判定
-    if ($('#today').val() === "") {
+    if ($('#today').val().trim() === "") {
       $('#today').addClass('warn');
       $('#warning1').text("入力必須です");
       //入力文字数の判定
-    } else if ($('#today').val().length > 20) {
+    } else if ($('#today').val().trim().length > 20) {
       $('#today').addClass('warn');
       $('#warning1').text("20字以内で入力してください");
       //入力が適正なときの動作
@@ -31,10 +31,10 @@ $(function () {
 
   $('#add2').on('click', function (e) {
     e.preventDefault();//これがないとすぐ消えてしまう。
-    if ($('#tomorrow').val() === "") {
+    if ($('#tomorrow').val().trim() === "") {
       $('#tomorrow').addClass('warn');
       $('#warning2').text("入力必須です");
-    } else if ($('#tomorrow').val().length > 20) {
+    } else if ($('#tomorrow').val().trim().length > 20) {
       $('#tomorrow').addClass('warn');
       $('#warning2').text("20字以内で入力してください");
     } else {
