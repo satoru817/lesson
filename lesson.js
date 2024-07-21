@@ -149,6 +149,4 @@ btn.addEventListener(`click`, () => {
 
 });
 
-const nameForm = document.getElementById('productName');
-
 
