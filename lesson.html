@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    
-  </head>
 
-  <body>
-    <form name="product">
-      <input type="text" name="productName" placeholder="商品名">
-      <input type="text" name="productPrice" placeholder="価格">
-      <br>
-      <input type="button" id="buyButton" value="買い物">
-    </form>
-    <div id="judgement"></div>
-    
-    <script src="lesson.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <form name="product">
+    <input type="text" id="productName" placeholder="商品名">
+    <p id="alert1" style="color:red"></p>
+    <input type="text" name="productPrice" placeholder="価格">
+    <p id="alert2" style="color:red"></p>
+    <br>
+    <input type="button" id="buyButton" value="買い物">
+  </form>
+  <div id="judgement"></div>
+
+  <script src="lesson.js"></script>
+</body>
+
 </html>

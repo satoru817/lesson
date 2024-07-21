@@ -8,28 +8,28 @@
 - 税込み価格が 1000 円を超えたら、「〇〇は高いので買うのをやめます。」と表示する
 - 消費税は 8%とする*/
 
-const fruits =[];
-class fruit{
-  constructor(name,price){
+const fruits = [];
+class fruit {
+  constructor(name, price) {
     this.name = name;
     this.price = price;
   };
 };
 
-const apple = new fruit("りんご",100);
-const banana = new fruit("バナナ",500);
-const lemon = new fruit("レモン",950);
+const apple = new fruit("りんご", 100);
+const banana = new fruit("バナナ", 500);
+const lemon = new fruit("レモン", 950);
 
 fruits.push(apple);
 fruits.push(banana);
 fruits.push(lemon);
 
-for(let i=0; i<fruits.length;i++){
+for (let i = 0; i < fruits.length; i++) {
   const name = fruits[i].name;
-  const price=fruits[i].price;
-  const price_include_tax = price*1.08;
-  console.log(name + `は`+price_include_tax + '円です。' );
-  if(price_include_tax>1000){
+  const price = fruits[i].price;
+  const price_include_tax = price * 1.08;
+  console.log(name + `は` + price_include_tax + '円です。');
+  if (price_include_tax > 1000) {
     console.log(`${name}は高いので買うのをやめます。`);
   };
 };
@@ -48,28 +48,28 @@ for(let i=0; i<fruits.length;i++){
 // // - 作成できたら共通している処理を関数化する
 
 
-const vegetables = [{name:`人参`,price:300},{name:`キャベツ`,price:750},{name:`じゃがいも`,price:980}];
+const vegetables = [{ name: `人参`, price: 300 }, { name: `キャベツ`, price: 750 }, { name: `じゃがいも`, price: 980 }];
 
-for(let i=0; i<vegetables.length;i++){
+for (let i = 0; i < vegetables.length; i++) {
   const name = vegetables[i].name;
-  const price=vegetables[i].price;
-  const price_include_tax = price*1.08;
-  console.log(name + `は`+price_include_tax + '円です。' );
-  if(price_include_tax>1000){
+  const price = vegetables[i].price;
+  const price_include_tax = price * 1.08;
+  console.log(name + `は` + price_include_tax + '円です。');
+  if (price_include_tax > 1000) {
     console.log(`${name}は高いので買うのをやめます。`);
   };
 };
 
-function SayTaxedPrices(arr){
-  if (Array.isArray(arr) !== true){
+function SayTaxedPrices(arr) {
+  if (Array.isArray(arr) !== true) {
     throw new Error("You must assign array to this function");
-  }else{
-    for(let i=0; i<arr.length;i++){
+  } else {
+    for (let i = 0; i < arr.length; i++) {
       const name = arr[i].name;
-      const price=arr[i].price;
-      const price_include_tax = price*1.08;
-      console.log(name + `は`+price_include_tax + '円です。' );
-      if(price_include_tax>1000){
+      const price = arr[i].price;
+      const price_include_tax = price * 1.08;
+      console.log(name + `は` + price_include_tax + '円です。');
+      if (price_include_tax > 1000) {
         console.log(`${name}は高いので買うのをやめます。`);
       };
     };
@@ -91,14 +91,14 @@ SayTaxedPrices(fruits);
 // - 税込み価格が 1000 円を超えたら、「〇〇は高いので買うのをやめます。」と表示する
 
 
-function GetTaxedPrice(price){
-  return price*1.08;
+function GetTaxedPrice(price) {
+  return price * 1.08;
 };
 
-function JudgePrice(price){
-  if(price>1000){
+function JudgePrice(price) {
+  if (price > 1000) {
     return true;
-  }else{
+  } else {
     return false;
   }
 };
@@ -107,13 +107,48 @@ const btn = document.getElementById(`buyButton`);
 const judgement = document.getElementById("judgement");
 
 
-btn.addEventListener(`click`,()=>{
-    const productPrice = document.forms.product.productPrice.value;
-    const productName = document.forms.product.productName.value;
-    const taxed_price = GetTaxedPrice(productPrice);
+btn.addEventListener(`click`, () => {
+  const productPrice = document.forms.product.productPrice.value;
+  const productName = document.forms.product.productName.value;
+  const regex = /[0-9]+/
 
-    judgement.textContent = productName+'は税込み'+taxed_price+"円です";
-    if(JudgePrice(taxed_price)){
-      judgement.innerHTML +=`<br>${productName}は高いので買うのをやめます。`;
-    }
+  if (productPrice === "") {
+    const alert2 = document.getElementById("alert2");
+    alert2.textContent = "価格が入力されていません";
+  } else if (!regex.test(productPrice)) {
+    alert2.textContent = "";
+    throw new Error("数字ではありません");
+  } else {
+    alert2.textContent = "";
+  }
+
+  if (productName === "") {
+    const alert1 = document.getElementById("alert1");
+    alert1.textContent = "商品名が入力されていません";
+  } else {
+    alert1.textContent = "";
+  };
+
+  if (productName != "" && regex.test(productPrice)) {
+    const taxed_price = GetTaxedPrice(productPrice);
+    judgement.textContent = productName + 'は税込み' + taxed_price + "円です";
+    if (JudgePrice(taxed_price)) {
+      judgement.innerHTML += `<br>${productName}は高いので買うのをやめます。`;
+    };
+  } else {
+    judgement.textContent = "";
+  }
+
+
+
+
+
+
+
+
+
 });
+
+const nameForm = document.getElementById('productName');
+
+
