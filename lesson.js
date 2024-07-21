@@ -112,6 +112,13 @@ btn.addEventListener(`click`, () => {
   const productName = document.forms.product.productName.value;
   const regex = /[0-9]+/
 
+  if (productName === "") {
+    const alert1 = document.getElementById("alert1");
+    alert1.textContent = "商品名が入力されていません";
+  } else {
+    alert1.textContent = "";
+  };
+
   if (productPrice === "") {
     const alert2 = document.getElementById("alert2");
     alert2.textContent = "価格が入力されていません";
@@ -122,12 +129,7 @@ btn.addEventListener(`click`, () => {
     alert2.textContent = "";
   }
 
-  if (productName === "") {
-    const alert1 = document.getElementById("alert1");
-    alert1.textContent = "商品名が入力されていません";
-  } else {
-    alert1.textContent = "";
-  };
+
 
   if (productName != "" && regex.test(productPrice)) {
     const taxed_price = GetTaxedPrice(productPrice);
