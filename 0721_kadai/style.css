@@ -19,7 +19,12 @@ li {
 
 }
 
-.task {
+.task,
+.input {
   display: flex;
   align-items: center;
+}
+
+.alert {
+  opacity: 0.3;
 }

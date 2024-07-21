@@ -1,76 +1,81 @@
+//警告文(20字以上)を出す関数
+function alert(selector, num) {
+  selector.on('input', function (e) {
+    if (selector.val().trim().length > 20) {
+      $(`#day${num}`).addClass('warn');
+      $(`#warning${num}`).text("20字以内で入力してください");
+      $(`#add${num}`).addClass('alert');
+    } else {
+      $(`#day${num}`).removeClass('warn');
+      $(`#warning${num}`).text("");
+      $(`#add${num}`).removeClass('alert');
+    }
+  });
+}
+
 $(function () {
-  var cnt1 = 0;
-  var cnt2 = 0;
-  var cnt3 = 1;
-  var cnt4 = 1;
+
+  var slide1 = 1;
+  var slide2 = 1;
+
+  var $today = $('#day1');
+  var $tomorrow = $('#day2');
+
+  alert($today, 1);
+  alert($tomorrow, 2);
+
+
+
 
   //追加ボタンの機能
-  $('#add1').on('click', function (e) {
-    e.preventDefault();//これがないとすぐ消えてしまう。
-    //入力なしの判定
-    if ($('#today').val().trim() === "") {
-      $('#today').addClass('warn');
-      $('#warning1').text("入力必須です");
+  $('button[id^=add]').on('click', function (e) {
+    //e.preventDefault();//これがないとすぐ消えてしまったのはformタグの中だったから？
+
+    //イベントを発生させた要素のidを取得
+    const id = e.target.id;
+    //今日と明日を区別するためのnum
+    const num = id.substring(3);
+    if ($(`#day${num}`).val().trim() === "") {
+      $(`#day${num}`).addClass('warn');
+      $(`#warning${num}`).text("入力必須です");
       //入力文字数の判定
-    } else if ($('#today').val().trim().length > 20) {
-      $('#today').addClass('warn');
-      $('#warning1').text("20字以内で入力してください");
+    } else if ($(`#day${num}`).val().trim().length > 20) {
+      $(`#day${num}`).addClass('warn');
+      $(`#warning${num}`).text("20字以内で入力してください");
       //入力が適正なときの動作
     } else {
-      $('#today').removeClass('warn');
-      $('#warning1').text("");
-      //li要素を区別するためのcnt
-      cnt1 += 1;
-      const text = $('#today').val();
-      const inputStatement = `<li id=${cnt1}><input type="checkbox" id ="${cnt1}" class="toggle_lt">${text}&nbsp;<button class="remove" id =${cnt1}>削除</button></li>`
+      $(`#day${num}`).removeClass('warn');
+      $(`#warning${num}`).text("");
+
+      const text = $(`#day${num}`).val();
+      const inputStatement = `<li><input type="checkbox" class="toggle_lt">${text}&nbsp;<button class="remove">削除</button></li>`
       console.log(text);
-      $('#slide1').append(inputStatement);
+      $(`#slide${num}`).append(inputStatement);
     }
 
   });
 
-  $('#add2').on('click', function (e) {
-    e.preventDefault();//これがないとすぐ消えてしまう。
-    if ($('#tomorrow').val().trim() === "") {
-      $('#tomorrow').addClass('warn');
-      $('#warning2').text("入力必須です");
-    } else if ($('#tomorrow').val().trim().length > 20) {
-      $('#tomorrow').addClass('warn');
-      $('#warning2').text("20字以内で入力してください");
-    } else {
-      $('#tomorrow').removeClass('warn');
-      $('#warning2').text("");
-      cnt2 -= 1;
-      const text = $('#tomorrow').val();
-      const inputStatement = `<li id=${cnt2}><input type="checkbox" id ="${cnt2}" class="toggle_lt">${text}&nbsp;<button class="remove" id =${cnt2}>削除</button></li>`
-      console.log(text);
-      $('#slide2').append(inputStatement);
-    }
 
-  });
 
 
   //削除ボタンの機能
   $(document).on('click', '.remove', function (e) {
-    e.preventDefault();
-    const id = this.id;
-    console.log("ボタンが押されました" + this.id);
-    $(`li#${id}`).remove();
+
+    $(this).parent().remove();
+
   });
 
   //チェックボックスの機能
   $(document).on('change', '.toggle_lt', function (e) {
-    e.preventDefault();
-    const id = this.id;
-    console.log("you checked me my id is" + id);
-    $(`li#${id}`).toggleClass('lt');
+
+    $(this).parent().toggleClass('lt');
 
   });
 
   //スライドの機能
   $('#slider1').on('click', function (e) {
-    cnt3 *= -1;
-    if (cnt3 < 0) {
+    slide1 *= -1;
+    if (slide1 < 0) {
       $('#slider1').html("&nbsp;▼");
     } else {
       $('#slider1').html("&nbsp;▲");
@@ -79,8 +84,8 @@ $(function () {
   });
 
   $('#slider2').on('click', function (e) {
-    cnt4 *= -1;
-    if (cnt4 < 0) {
+    slide2 *= -1;
+    if (slide2 < 0) {
       $('#slider2').html("&nbsp;▼");
     } else {
       $('#slider2').html("&nbsp;▲");
