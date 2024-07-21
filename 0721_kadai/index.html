@@ -3,14 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div>
-    <h1>今日やること</h1>
+    <div class="task">
+      <h1>今日やること</h1>
+      <p id="slider1">&nbsp;▲</p>
+    </div>
+
     <form>
       <input type="text" id="today">
       <button id="add1">追加</button>
+      <br>
+      <p id="warning1"></p>
     </form>
     <ul id="slide1">
 
@@ -18,10 +25,16 @@
   </div>
 
   <div>
-    <h1>明日やること</h1>
+    <div class="task">
+      <h1>明日やること</h1>
+      <p id="slider2">&nbsp;▲</p>
+    </div>
+
     <form>
-      <input type="text" id="tomorrow_item">
+      <input type="text" id="tomorrow">
       <button id="add2">追加</button>
+      <br>
+      <p id="warning2"></p>
     </form>
     <ul id="slide2">
 

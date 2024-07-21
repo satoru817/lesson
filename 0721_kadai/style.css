@@ -1,0 +1,25 @@
+.lt {
+  text-decoration: line-through;
+}
+
+.warn {
+  background-color: red;
+}
+
+li {
+  text-decoration: none;
+}
+
+[id^="warning"] {
+  color: red;
+}
+
+[id^="slider"] {
+  cursor: pointer;
+
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
