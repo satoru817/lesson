@@ -4,11 +4,11 @@ function alert(selector, num) {
     if (selector.val().trim().length > 20) {
       $(`#day${num}`).addClass('warn');
       $(`#warning${num}`).text("20字以内で入力してください");
-      $(`#add${num}`).addClass('alert');
+      $(`#add${num}`).prop("disabled", true);
     } else {
       $(`#day${num}`).removeClass('warn');
       $(`#warning${num}`).text("");
-      $(`#add${num}`).removeClass('alert');
+      $(`#add${num}`).prop("disabled", false);
     }
   });
 }

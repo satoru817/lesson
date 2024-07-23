@@ -24,8 +24,3 @@ li {
   display: flex;
   align-items: center;
 }
-
-.alert {
-  opacity: 0.3;
-  pointer-events: none;
-}
