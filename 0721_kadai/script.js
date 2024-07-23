@@ -1,4 +1,4 @@
-//警告文(20字以上)を出す関数
+//警告文(20字以上)を出し、ボタンを無効化しopacityを変化させる関数
 function alert(selector, num) {
   selector.on('input', function (e) {
     if (selector.val().trim().length > 20) {
@@ -13,18 +13,34 @@ function alert(selector, num) {
   });
 }
 
+
+//スライドを上下させる関数
+function toggleSlide(selector, flg) {
+  selector.on('click', function (e) {
+    flg *= -1;
+    const id = e.target.id;
+    const num = id.substring(6);
+    console.log(num);
+    if (flg < 0) {
+      selector.html("&nbsp;▼");
+    } else {
+      selector.html("&nbsp;▲");
+    }
+    $(`#slide${num}`).slideToggle();
+  });
+}
+
 $(function () {
 
-  var slide1 = 1;
-  var slide2 = 1;
+  var slideFlg1 = 1;
+  var slideFlg2 = 1;
 
   var $today = $('#day1');
   var $tomorrow = $('#day2');
 
+  //20字より多いときの警告
   alert($today, 1);
   alert($tomorrow, 2);
-
-
 
 
   //追加ボタンの機能
@@ -59,41 +75,24 @@ $(function () {
 
 
   //削除ボタンの機能
-  $(document).on('click', '.remove', function (e) {
+  $(document).on('click', '.remove', function () {
 
     $(this).parent().remove();
 
   });
 
   //チェックボックスの機能
-  $(document).on('change', '.toggle_lt', function (e) {
+  $(document).on('change', '.toggle_lt', function () {
 
     $(this).parent().toggleClass('lt');
 
   });
 
   //スライドの機能
-  $('#slider1').on('click', function (e) {
-    slide1 *= -1;
-    if (slide1 < 0) {
-      $('#slider1').html("&nbsp;▼");
-    } else {
-      $('#slider1').html("&nbsp;▲");
-    }
-    $("#slide1").slideToggle();
-  });
 
-  $('#slider2').on('click', function (e) {
-    slide2 *= -1;
-    if (slide2 < 0) {
-      $('#slider2').html("&nbsp;▼");
-    } else {
-      $('#slider2').html("&nbsp;▲");
-    }
-    $("#slide2").slideToggle();
-  });
+  toggleSlide($('#slider1'), slideFlg1);
 
-
+  toggleSlide($('#slider2'), slideFlg2);
 
 
 })
