@@ -16,11 +16,9 @@ public class practice {
     
     public static void main (String[] args) {
         // TODO Auto-generated method stub
-        int A = 0;
-        int B = 0;
-        int C = 0;
-        int D = 0;
-        int E = 0;
+        
+        // 人数分布
+        int[] dist = { 0, 0, 0, 0, 0, 0 };
         
         try (Scanner scanner = new Scanner (System.in)) {
             while (true) {
@@ -35,19 +33,19 @@ public class practice {
                     int evaluation = 0;
                     if (score >= 90) {
                         evaluation = 5;
-                        A++;
+                        dist[5]++;
                     } else if (score >= 70) {
                         evaluation = 4;
-                        B++;
+                        dist[4]++;
                     } else if (score >= 50) {
                         evaluation = 3;
-                        C++;
+                        dist[3]++;
                     } else if (score >= 30) {
                         evaluation = 2;
-                        D++;
+                        dist[2]++;
                     } else if (score >= 0) {
                         evaluation = 1;
-                        E++;
+                        dist[1]++;
                     }
                     scanner.nextLine ();// enter
                     System.out.println (name + "さんの評価は" + evaluation);
@@ -66,12 +64,12 @@ public class practice {
                 
             }
             
-            int sup = D + E;
-            System.out.println ("評価5: " + A + "人");
-            System.out.println ("評価4: " + B + "人");
-            System.out.println ("評価3: " + C + "人");
-            System.out.println ("評価2: " + D + "人");
-            System.out.println ("評価1: " + E + "人");
+            int sup = dist[1] + dist[2];
+            System.out.println ("評価5: " + dist[5] + "人");
+            System.out.println ("評価4: " + dist[4] + "人");
+            System.out.println ("評価3: " + dist[3] + "人");
+            System.out.println ("評価2: " + dist[2] + "人");
+            System.out.println ("評価1: " + dist[1] + "人");
             System.out.println ("夏休みの補習の対象は" + sup + "人です");
             
         }
@@ -79,3 +77,4 @@ public class practice {
     }
     
 }
+
