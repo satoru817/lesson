@@ -71,11 +71,14 @@ public class practice {
             }
             
             int sup = distMap.get (1) + distMap.get (2);
-            System.out.println ("評価5: " + distMap.get (5) + "人");
-            System.out.println ("評価4: " + distMap.get (4) + "人");
-            System.out.println ("評価3: " + distMap.get (3) + "人");
-            System.out.println ("評価2: " + distMap.get (2) + "人");
-            System.out.println ("評価1: " + distMap.get (1) + "人");
+            // ラムダ式を使わない場合
+            // for (int j = 1; j <= 5; j++) {
+            // System.out.println ("評価" + j + ": " + distMap.get (j) + "人");
+            // }
+            
+            // ラムダ式を使った場合
+            distMap.forEach ( (key, value) -> System.out.println ("評価" + key + ": " + value + "人"));
+            
             System.out.println ("夏休みの補習の対象は" + sup + "人です");
             
         }
@@ -83,4 +86,3 @@ public class practice {
     }
     
 }
-
