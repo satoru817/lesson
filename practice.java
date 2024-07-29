@@ -1,5 +1,6 @@
 package lesson;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class practice {
@@ -17,8 +18,13 @@ public class practice {
     public static void main (String[] args) {
         // TODO Auto-generated method stub
         
-        // 人数分布
-        int[] dist = { 0, 0, 0, 0, 0, 0 };
+        // 人数分布をHashMapで表現
+        HashMap<Integer, Integer> distMap = new HashMap<Integer, Integer> ();
+        
+        // distMapの初期化（すべての度数を0とする）
+        for (int i = 1; i <= 5; i++) {
+            distMap.put (i, 0);
+        }
         
         try (Scanner scanner = new Scanner (System.in)) {
             while (true) {
@@ -33,19 +39,19 @@ public class practice {
                     int evaluation = 0;
                     if (score >= 90) {
                         evaluation = 5;
-                        dist[5]++;
+                        distMap.put (5, distMap.get (5) + 1);
                     } else if (score >= 70) {
                         evaluation = 4;
-                        dist[4]++;
+                        distMap.put (4, distMap.get (4) + 1);
                     } else if (score >= 50) {
                         evaluation = 3;
-                        dist[3]++;
+                        distMap.put (3, distMap.get (3) + 1);
                     } else if (score >= 30) {
                         evaluation = 2;
-                        dist[2]++;
+                        distMap.put (2, distMap.get (2) + 1);
                     } else if (score >= 0) {
                         evaluation = 1;
-                        dist[1]++;
+                        distMap.put (1, distMap.get (1) + 1);
                     }
                     scanner.nextLine ();// enter
                     System.out.println (name + "さんの評価は" + evaluation);
@@ -64,12 +70,12 @@ public class practice {
                 
             }
             
-            int sup = dist[1] + dist[2];
-            System.out.println ("評価5: " + dist[5] + "人");
-            System.out.println ("評価4: " + dist[4] + "人");
-            System.out.println ("評価3: " + dist[3] + "人");
-            System.out.println ("評価2: " + dist[2] + "人");
-            System.out.println ("評価1: " + dist[1] + "人");
+            int sup = distMap.get (1) + distMap.get (2);
+            System.out.println ("評価5: " + distMap.get (5) + "人");
+            System.out.println ("評価4: " + distMap.get (4) + "人");
+            System.out.println ("評価3: " + distMap.get (3) + "人");
+            System.out.println ("評価2: " + distMap.get (2) + "人");
+            System.out.println ("評価1: " + distMap.get (1) + "人");
             System.out.println ("夏休みの補習の対象は" + sup + "人です");
             
         }
