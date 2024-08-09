@@ -18,8 +18,21 @@ SELECT emp_no , dept_no ,from_date,to_date from dept_emp WHERE dept_no IN ('d004
 /*&&と||の書き直しをしました、IN句を使いました*/
 
 /*dept_nameがCustomer Serviceの中で歴代で給料が一番高い社員の名前と給料*/
-select salary as MaxSalary ,first_name,last_name from salaries as sl inner join dept_emp as de on de.emp_no = sl.emp_no and de.from_date <= sl.from_date and sl.to_date<=de.to_date inner join departments as dp on dp.dept_no = de.dept_no inner join employees as ep on ep.emp_no=de.emp_no where salary=(select max(salary) from salaries as sl inner join dept_emp as de on de.emp_no = sl.emp_no and de.from_date <= sl.from_date and sl.to_date<=de.to_date inner join departments as dp on dp.dept_no = de.dept_no where dept_name = 'Customer Service') and dept_name = 'Customer Service';
-/*サブクエリを利用して書き直しました。*/
+select salary as MaxSalary ,first_name,last_name 
+	from salaries as sl 
+    inner join dept_emp as de 
+    	on de.emp_no = sl.emp_no 
+        	and de.from_date <= sl.from_date 
+            and sl.to_date<=de.to_date 
+    inner join departments as dp 
+    	on dp.dept_no = de.dept_no 
+    inner join employees as ep 
+    	on ep.emp_no=de.emp_no
+    where dept_name = 'Customer Service'
+    order by salary desc
+    limit 1;
+        
+/*order byを利用して書き直しました。*/
 
 /*部署ごとの現在の給料の平均値*/
 select avg(salary) as avs ,dept_name from dept_emp inner join departments on departments.dept_no = dept_emp.dept_no inner join salaries on salaries.emp_no = dept_emp.emp_no where salaries.to_date >= CURDATE() AND dept_emp.to_date >= CURDATE() group by dept_name;
@@ -33,3 +46,26 @@ SELECT dept_name,salary,first_name,last_name FROM departments INNER JOIN (select
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(select max(first_name)
+     	from salaries sl2
+     	inner join employees as ep
+     	on ep.emp_no = sl2.emp_no
+     	where sl2.emp_no=sl1.emp_no
+     		and sl2.salary = max(sl1.salary))as first_name
+
+
+WHERE dp.dept_name = 'Customer Service';
