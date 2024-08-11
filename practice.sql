@@ -31,8 +31,22 @@ select salary as MaxSalary ,first_name,last_name
     where dept_name = 'Customer Service'
     order by salary desc
     limit 1;
+
+/*case式を利用した書き方*/
+select salary, first_name,last_name
+	from salaries as sl 
+    inner join dept_emp as de 
+    	on de.emp_no = sl.emp_no 
+        	and de.from_date <= sl.from_date 
+            and sl.to_date<=de.to_date 
+    inner join departments as dp 
+    	on dp.dept_no = de.dept_no 
+    inner join employees as ep 
+    	on ep.emp_no=de.emp_no
+    order by (case when dept_name='Customer Service' then salary else 0 end) DESC
+    limit 1;
         
-/*order byを利用して書き直しました。*/
+
 
 /*部署ごとの現在の給料の平均値*/
 select avg(salary) as avs ,dept_name from dept_emp inner join departments on departments.dept_no = dept_emp.dept_no inner join salaries on salaries.emp_no = dept_emp.emp_no where salaries.to_date >= CURDATE() AND dept_emp.to_date >= CURDATE() group by dept_name;
