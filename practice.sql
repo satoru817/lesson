@@ -45,7 +45,21 @@ select salary, first_name,last_name
     	on ep.emp_no=de.emp_no
     order by (case when dept_name='Customer Service' then salary else 0 end) DESC
     limit 1;
-        
+
+/*window関数を利用した書き方*/
+select min(salary)  over w, min(first_name)  over w,min(last_name) over w
+	from salaries as sl 
+    inner join dept_emp as de 
+    	on de.emp_no = sl.emp_no 
+        	and de.from_date <= sl.from_date 
+            and sl.to_date<=de.to_date 
+    inner join departments as dp 
+    	on dp.dept_no = de.dept_no 
+    inner join employees as ep 
+    	on ep.emp_no=de.emp_no
+    where dp.dept_name = 'Customer Service'
+    window w as (order by salary desc rows between current row and current row)
+    limit 1;
 
 
 /*部署ごとの現在の給料の平均値*/
@@ -74,12 +88,4 @@ SELECT dept_name,salary,first_name,last_name FROM departments INNER JOIN (select
 
 
 
-	(select max(first_name)
-     	from salaries sl2
-     	inner join employees as ep
-     	on ep.emp_no = sl2.emp_no
-     	where sl2.emp_no=sl1.emp_no
-     		and sl2.salary = max(sl1.salary))as first_name
 
-
-WHERE dp.dept_name = 'Customer Service';
