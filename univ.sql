@@ -11,7 +11,7 @@ CREATE TABLE courses(course_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 					 teacher_id INT NOT NULL,
                      max_students_num INT,
                      period_begin DATE,
-                     perido_end DATE
+                     perido_end DATE,
                      FOREIGN KEY(teacher_id) REFERENCES teachers(teacher_id));
                      
 CREATE TABLE attendances(attendance_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
