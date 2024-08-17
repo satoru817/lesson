@@ -47,7 +47,7 @@ select salary, first_name,last_name
     limit 1;
 
 /*window関数を利用した書き方*/
-select min(salary)  over w, min(first_name)  over w,min(last_name) over w
+select min(salary)  over w, first_name,last_name
 	from salaries as sl 
     inner join dept_emp as de 
     	on de.emp_no = sl.emp_no 
