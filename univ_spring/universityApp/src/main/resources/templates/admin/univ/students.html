@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>学生一覧</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h2>学生一覧</h2>
+      <table class="students">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>名前</th>
+            <th>学年</th>
+            <th>担任</th>
+          </tr>
+        </thead>
+        <tbody>
+        	<tr th:each="student : ${students}">
+        		<td th:text="${student.getStudentId()}"></td>
+				<td th:text="${student.getStudentName()}"></td>
+				<td th:text="${student.getGrade()+'年'}"></td>     		
+        	</tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+/* style.css */
+
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f1f1; /* 薄いピンク背景 */
+}
+
+/* ヘッダー */
+header {
+  background-color: #f6b4b4; /* 薄いピンク */
+  padding: 10px 20px;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #f2a2a2; /* ホバー時の濃いピンク */
+  border-radius: 5px;
+}
+
+/* メインコンテンツ */
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #f68f8f; /* 濃いピンク */
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f6b4b4; /* 薄いピンク */
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9dcdc; /* 薄いピンクの淡い色 */
+}
+
+table tr:hover {
+  background-color: #f2a2a2; /* ホバー時の濃いピンク */
+  color: #fff;
+}
+
+/* フッター */
+footer {
+  background-color: #f6b4b4; /* 薄いピンク */
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
