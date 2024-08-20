@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>学生一覧</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h2>学生一覧</h2>
+      <table class="students">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>名前</th>
+            <th>学年</th>
+            <th>担任</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>田中 太郎</td>
+            <td>2年</td>
+            <td>山田先生</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>鈴木 花子</td>
+            <td>3年</td>
+            <td>佐藤先生</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>佐々木 一郎</td>
+            <td>1年</td>
+            <td>田中先生</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

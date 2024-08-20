@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>プログラミング基礎</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <table class="details">
+        <tbody>
+          <tr>
+            <th>ID</th>
+            <td>101</td>
+          </tr>
+          <tr>
+            <th>コース名</th>
+            <td>プログラミング基礎</td>
+          </tr>
+          <tr>
+            <th>担当教員</th>
+            <td>田中先生</td>
+          </tr>
+          <tr>
+            <th>最大学生数</th>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th>期間</th>
+            <td>2024年4月 - 2024年9月</td>
+          </tr>
+          <tr>
+            <th>受講数</th>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

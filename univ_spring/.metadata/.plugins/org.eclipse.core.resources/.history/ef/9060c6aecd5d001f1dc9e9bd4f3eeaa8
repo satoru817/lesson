@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>コース一覧</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <script src="../../../js/script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h2>コース一覧</h2>
+      <table class="courses">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>コース名</th>
+            <th>担当教員</th>
+            <th>詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+        	<tr th:each="course : ${courses}">
+        		<td th:text="${course.getCourseId()}"></td>
+        		<td th:text="${course.getCourseName()}"></td>
+        		<td th:text="${course.getTeacher().getTeacherName()+'先生'}"></td>
+        		<td>
+        			<a href="http://localhost:8080/admin/univ/course-detail">
+        				詳細
+        			</a>
+        		</td>
+        	</tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

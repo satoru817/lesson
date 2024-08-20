@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>プログラミング基礎</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <script src="../../../js/script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <table class="details" th:object="${course}">
+        <tbody>
+          <tr>
+            <th>ID</th>
+            <td th:text="*{courseId}"></td>
+          </tr>
+          <tr>
+            <th>コース名</th>
+            <td th:text="*{courseName}"></td>
+          </tr>
+          <tr>
+            <th>担当教員</th>
+            <td th:text="*{teacher.getTeacherName()+'先生'}"></td>
+          </tr>
+          <tr>
+            <th>最大学生数</th>
+            <td th:text="*{maxStudentsNum}"></td>
+          </tr>
+          <tr>
+            <th>期間</th>
+            <td th:text="*{#dates.format(periodBegin,'YYYY年M月')}"></td>
+          </tr>
+          <tr>
+            <th>受講数</th>
+            <td th:text="${attendStudentNum}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>学生管理システム</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+
+  </head>
+  <body>
+    <header>
+    	  <nav>
+    <h1>学生管理システム</h1>
+    <a th:href="@{admin/univ/index.html}">TOP</a>
+    <a th:href="@{admin/univ/students.html}">学生一覧</a>
+    <a th:href="@{admin/univ/courses.html}">コース一覧</a>
+  </nav>
+    </header>
+    <main>
+      <p>学生管理を行います</p>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+package com.example.universityApplication.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.universityApplication.entity.Student;
+import com.example.universityApplication.entity.Teacher;
+import com.example.universityApplication.repository.StudentRepository;
+import com.example.universityApplication.repository.TeacherRepository;
+
+@Controller
+@RequestMapping("admin/univ")
+public class adminUnivController {
+	
+	private final StudentRepository studentRepository;
+	private final TeacherRepository teacherRepository;
+	
+	public adminUnivController(StudentRepository studentRepository,TeacherRepository teacherRepository) {
+		this.studentRepository = studentRepository;
+		this.teacherRepository = teacherRepository;
+	}
+	
+	@GetMapping
+	public String index() {
+		return "admin/univ/index";
+	}
+	
+	@GetMapping("/courses")
+	public String course() {
+		return "admin/univ/courses";
+	}
+	
+	@GetMapping("/students")
+	public String student(Model model) {
+		List<Student> students = studentRepository.findAll();
+		List<String> teachers = new ArrayList<String>();
+		
+		for(Student s: students) {
+			teachers.add(s.getTeacher().getTeacherName());
+		};
+		
+		model.addAttribute("students", students);
+		
+		model.addAttribute("teachers", teachers);
+		
+		return "admin/univ/students";
+	}
+
+}

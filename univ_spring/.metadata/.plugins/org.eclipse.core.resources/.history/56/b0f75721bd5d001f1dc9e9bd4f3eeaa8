@@ -1,0 +1,15 @@
+package com.example.universityApplication.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("admin/univ")
+public class adminUnivController {
+	@GetMapping
+	public String index() {
+		return "admin/univ/index";
+	}
+
+}
