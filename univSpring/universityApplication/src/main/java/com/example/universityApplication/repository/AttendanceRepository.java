@@ -5,12 +5,13 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.universityApplication.entity.Attendance;
+import com.example.universityApplication.entity.Course;
 
 public interface AttendanceRepository extends JpaRepository<Attendance,Integer>{
 
 
 	List<Attendance> findByCourseCourseId(Integer courseId);
-
+	int countByCourse(Course course);
 
 
 }

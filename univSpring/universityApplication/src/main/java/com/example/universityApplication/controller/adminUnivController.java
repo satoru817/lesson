@@ -57,8 +57,12 @@ public class adminUnivController {
 	@GetMapping("/course-details/{id}")
 	public String courseDetail(@PathVariable(name="id")Integer id,Model model) {
 		Course course = courseRepository.getReferenceById(id);
-		List<Attendance> attendance = attendanceRepository.findByCourseCourseId(course.getCourseId());
-		int attendStudentNum = attendance.size();
+		//List<Attendance> attendance = attendanceRepository.findByCourseCourseId(course.getCourseId());
+		//int attendStudentNum = attendance.size();
+		//count()で書き換えたい
+		
+		int attendStudentNum = attendanceRepository.countByCourse(course);
+
 		model.addAttribute("course",course);
 		model.addAttribute("attendStudentNum",attendStudentNum);
 		

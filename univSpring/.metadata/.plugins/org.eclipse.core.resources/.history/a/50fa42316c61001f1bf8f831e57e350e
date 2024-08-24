@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		
+	</head>
+	<body>
+		<div th:fragment="header">
+			  <nav>
+          <h1>学生管理システム</h1>
+          <a href="http://localhost:8080/admin/univ">TOP</a>
+          <a href="http://localhost:8080/admin/univ/students">学生一覧</a>
+          <a href="http://localhost:8080/admin/univ/courses">コース一覧</a>
+             </nav>
+		</div>
+	</body>
+</html>

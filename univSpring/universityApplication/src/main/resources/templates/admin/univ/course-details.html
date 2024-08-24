@@ -5,10 +5,9 @@
     <meta name="description" content="" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../css/style.css" />
-    <script src="../../../js/script.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <div th:replace="~{fragment::header}"></div>
     <main>
       <table class="details" th:object="${course}">
         <tbody>

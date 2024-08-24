@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		
+	</head>
+	<body>
+		<div th:fragment="header">
+		  <nav>
+           	<h1>学生管理システム</h1>
+           		<a th:href="@{admin/univ}">TOP</a>
+           		<a href="@{admin/univ/students}">学生一覧</a>
+           		<a href="@{admin/univ/courses}">コース一覧</a>
+          	</nav>
+		</div>
+	</body>
+</html>
