@@ -985,3 +985,133 @@ java.net.MalformedURLException: Unsupported "platform:" protocol variation "net.
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 10:57:46.437
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2024-08-24 11:03:08.610 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=22.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-24 11:03:10.257
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-24 11:03:13.321
+!MESSAGE Logback config file: /home/satoru/lesson/univSpring/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-08-24 11:03:13.608
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-24 11:03:13.608
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-24 11:03:13.783
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-24 11:03:13.784
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.jface 2 0 2024-08-24 11:03:14.205
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-24 11:03:14.205
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.connector.local.command.launch"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		WorkbenchHandlerServiceHandler("pl.szpinda.plugin.tomcat.commands.tomcatStartStop"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-24 11:03:16.214
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/home/satoru/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_22.0.1.v20240426-1149/jre/bin/java
+-cp
+/home/satoru/eclipse/java-2024-06/eclipse/../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.56.0.202407191456/servers/spring-boot-language-server/BOOT-INF/classes:/home/satoru/eclipse/java-2024-06/eclipse/../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.56.0.202407191456/servers/spring-boot-language-server/BOOT-INF/lib/*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:/home/satoru/eclipse/java-2024-06/eclipse/../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.56.0.202407191456/servers/spring-boot-language-server/BOOT-INF/classes/application.properties
+-XX:ErrorFile=/home/satoru/lesson/univSpring/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1724464996214
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-24 11:03:16.214
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-24 11:03:16.221
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 18662
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-24 11:03:16.686
+!MESSAGE Boot project ADDED: universityApplication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-24 11:03:16.687
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-24 11:03:16.688
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2024-08-24 11:03:20.834
+!MESSAGE Error while getting URI 'platform:net.sf.eclipse.tomcat/net/sf/eclipse/tomcat/schemas/' from plugin 'net.sf.eclipse.tomcat' : Unsupported "platform:" protocol variation "net.sf.eclipse.tomcat".
+!STACK 0
+java.net.MalformedURLException: Unsupported "platform:" protocol variation "net.sf.eclipse.tomcat".
+	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:61)
+	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:138)
+	at java.base/java.net.URL.openConnection(URL.java:1258)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:46)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:301)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.resolveURI(XMLCatalogs.java:155)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:71)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:782)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:291)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:194)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:67)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceServerConstants.storePreferencesToLemminxOptions(XMLPreferenceServerConstants.java:193)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:203)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:181)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:293)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1491)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:2073)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2035)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.837
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.837
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.838
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.839
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.844
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.846
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
