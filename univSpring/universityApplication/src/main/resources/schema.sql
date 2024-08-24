@@ -11,10 +11,11 @@ CREATE TABLE IF NOT EXISTS students (
                        
 CREATE TABLE IF NOT EXISTS courses(
 	course_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	course_name VARCHAR(255),
 	teacher_id INT NOT NULL,
     max_students_num INT,
     period_begin DATE,
-    perido_end DATE,
+    period_end DATE,
     FOREIGN KEY(teacher_id) REFERENCES teachers(teacher_id));
                      
 CREATE TABLE IF NOT EXISTS attendances(

@@ -497,3 +497,7 @@
 2024-08-24 09:13:03,257 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src/main/resources to target/classes
 2024-08-24 09:13:03,260 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
 2024-08-24 09:14:50,356 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-24 10:57:10,799 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-24 10:57:42,774 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-24 10:57:42,791 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src/main/resources to target/classes
+2024-08-24 10:57:42,795 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
