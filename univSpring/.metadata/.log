@@ -1115,3 +1115,6 @@ java.net.MalformedURLException: Unsupported "platform:" protocol variation "net.
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-24 11:03:20.846
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-08-24 11:15:44.435
+!MESSAGE No repository found at http://download.eclipse.org/releases/lunatype%2520or%2520select%2520a%2520site.
