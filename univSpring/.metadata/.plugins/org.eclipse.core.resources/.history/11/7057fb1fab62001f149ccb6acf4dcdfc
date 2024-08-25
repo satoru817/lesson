@@ -1,0 +1,9 @@
+package com.example.universityApplication.security;
+
+public class UserDetailsImpl implements UserDetails{
+	private final Login login;
+	private final Collection<GrantedAuthority> authorities;
+	
+	
+
+}

@@ -27,6 +27,12 @@ INSERT IGNORE INTO `attendances` (`attendance_id`, `student_id`, `course_id`) VA
 (38, 3, 104);
 
 
+INSERT IGNORE INTO roles(id,name) VALUES
+(1,'ROLE_STUDENT'),
+(2,'ROLE_TEACHER'),
+(3,'ROLE_ADMIN');
 
-
+INSERT IGNORE INTO logins (login_id,password,role_id) VALUES
+(1,'$2a$10$2JNjTwZBwo7fprL2X4sv.OEKqxnVtsVQvuXDkI8xVGix.U3W5B7CO',2),
+(2,'$2a$10$2JNjTwZBwo7fprL2X4sv.OEKqxnVtsVQvuXDkI8xVGix.U3W5B7CO',1);
 

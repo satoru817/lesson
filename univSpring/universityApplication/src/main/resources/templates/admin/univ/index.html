@@ -10,6 +10,7 @@
   <body>
    <div th:replace="~{fragment::header}"></div>
     <main>
+      <p th:if="${param.loggedIn}" class="alert alert-info">ログインしました</p>
       <p>学生管理を行います</p>
     </main>
     <footer></footer>

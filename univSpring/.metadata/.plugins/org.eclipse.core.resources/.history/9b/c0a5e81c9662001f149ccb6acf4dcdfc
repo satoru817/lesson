@@ -1,0 +1,5 @@
+package com.example.universityApplication.security;
+
+public class WebSecurityConfig {
+
+}

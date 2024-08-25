@@ -1,0 +1,15 @@
+package com.example.universityApplication.entity;
+
+@Entity
+@Table(name="logins")
+public class Login {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="login_id")
+	private Integer loginId;
+	
+	@
+	@JoinColumn(name="role_id")
+	private Role role;
+
+}

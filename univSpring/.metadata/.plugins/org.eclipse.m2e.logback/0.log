@@ -502,3 +502,167 @@
 2024-08-24 10:57:42,791 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src/main/resources to target/classes
 2024-08-24 10:57:42,795 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
 2024-08-24 11:03:16,641 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-25 08:06:54,524 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-25 09:33:07,903 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-25 09:38:19,392 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 09:38:19,417 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src/main/resources to target/classes
+2024-08-25 09:38:19,423 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 09:40:24,795 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 09:40:24,795 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 09:40:24,797 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 09:40:28,607 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 09:40:28,607 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 09:40:28,609 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 09:52:48,974 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 09:52:48,974 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 09:52:48,976 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 09:54:35,960 [Worker-55: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 09:54:35,961 [Worker-55: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 09:54:35,962 [Worker-55: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 09:59:13,096 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 09:59:13,097 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2024-08-25 09:59:13,099 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 10:00:14,661 [Worker-65: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 10:00:14,662 [Worker-65: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 10:00:14,663 [Worker-65: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 10:00:53,181 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 10:00:53,181 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 10:00:53,183 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 10:01:55,292 [Worker-65: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 10:01:55,292 [Worker-65: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 10:01:55,294 [Worker-65: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 10:02:21,552 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 10:02:21,553 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 10:02:21,554 [Worker-52: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 10:09:08,164 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 10:09:08,164 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 10:09:08,166 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 11:17:11,364 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 11:17:11,368 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 11:17:11,372 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 12:41:50,927 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 12:41:50,928 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 12:41:50,930 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 12:46:56,566 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 12:46:56,570 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 12:46:56,572 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 12:56:39,047 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 12:56:39,051 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 12:56:39,055 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 12:56:54,964 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 12:56:54,968 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 12:56:54,976 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 12:57:14,297 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 12:57:14,307 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 12:57:14,309 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:46:06,990 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:46:06,994 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:46:06,998 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:46:47,939 [Worker-143: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:46:47,942 [Worker-143: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:46:47,944 [Worker-143: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:52:33,186 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:52:33,190 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:52:33,192 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:55:05,386 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:55:05,389 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:55:05,391 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:55:37,483 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:55:37,486 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:55:37,487 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:56:49,457 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:56:49,460 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:56:49,462 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:56:53,241 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:56:53,244 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:56:53,245 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:57:35,972 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:57:35,976 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:57:35,979 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 13:58:32,422 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 13:58:32,424 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 13:58:32,425 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 14:01:20,821 [Worker-148: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 14:01:20,824 [Worker-148: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 14:01:20,825 [Worker-148: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 14:02:53,197 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 14:02:53,200 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 14:02:53,201 [Worker-146: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 14:03:01,100 [Worker-148: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 14:03:01,103 [Worker-148: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 14:03:01,104 [Worker-148: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:26:44,859 [Worker-161: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:26:44,863 [Worker-161: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:26:44,865 [Worker-161: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:27:38,749 [Worker-176: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:27:38,753 [Worker-176: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:27:38,755 [Worker-176: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:28:05,772 [Worker-173: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:28:05,776 [Worker-173: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:28:05,779 [Worker-173: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:28:13,133 [Worker-177: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:28:13,136 [Worker-177: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:28:13,137 [Worker-177: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:29:11,784 [Worker-161: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:29:11,787 [Worker-161: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:29:11,789 [Worker-161: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:30:16,772 [Worker-174: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:30:16,775 [Worker-174: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:30:16,777 [Worker-174: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:31:45,988 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:31:45,991 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:31:45,992 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:57:34,455 [Worker-190: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:57:34,458 [Worker-190: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:57:34,460 [Worker-190: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:57:38,060 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:57:38,063 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:57:38,064 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 15:59:20,374 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 15:59:20,377 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 15:59:20,378 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:02:21,970 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:02:21,973 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:02:21,975 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:13:07,880 [Worker-199: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:13:07,883 [Worker-199: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:13:07,885 [Worker-199: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:20:45,989 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:20:45,992 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:20:45,993 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:30:35,848 [Worker-204: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:30:35,852 [Worker-204: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:30:35,855 [Worker-204: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:31:00,534 [Worker-204: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:31:00,537 [Worker-204: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:31:00,538 [Worker-204: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:32:20,393 [Worker-207: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:32:20,396 [Worker-207: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:32:20,398 [Worker-207: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:40:23,332 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:40:23,335 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:40:23,336 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:42:46,706 [Worker-210: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:42:46,709 [Worker-210: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:42:46,710 [Worker-210: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:43:38,876 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:43:38,879 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 16:43:38,880 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 16:45:13,038 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-08-25 16:45:13,038 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 16:45:13,041 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 17:00:23,378 [Worker-220: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 17:00:23,384 [Worker-220: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 17:00:23,388 [Worker-220: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 17:00:33,386 [Worker-215: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 17:00:33,388 [Worker-215: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 17:00:33,390 [Worker-215: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 17:01:47,661 [Worker-225: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 17:01:47,664 [Worker-225: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 17:01:47,665 [Worker-225: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 17:04:42,155 [Worker-230: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 17:04:42,158 [Worker-230: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 17:04:42,159 [Worker-230: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
+2024-08-25 17:07:51,291 [Worker-228: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-08-25 17:07:51,294 [Worker-228: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src/main/resources to target/classes
+2024-08-25 17:07:51,296 [Worker-228: Launching universityApplication - UniversityApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/satoru/lesson/univSpring/universityApplication/src/test/resources
