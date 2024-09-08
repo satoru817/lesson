@@ -1,0 +1,14 @@
+#more {
+  display: none;
+}
+
+#isLoading {
+  display: none;
+}
+
+#scrollable {
+  width: fit-content;
+  height: 250px;
+  overflow: scroll;
+  background: orange;
+}
